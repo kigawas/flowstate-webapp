@@ -1,5 +1,7 @@
 $(function() {
+
   'use strict';
+
   var isSuccess = false;
   var language = 'en';
 
