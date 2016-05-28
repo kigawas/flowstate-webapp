@@ -1,5 +1,13 @@
 {
-    "name": "flowstate",
+    "name": "flowstate-webapp",
     "version": "0.1.0",
-    "main": "main.js"
+    "main": "main.js",
+    "repository": {
+      "type": "git",
+      "url": "git+https://github.com/kigawas/flowstate-webapp.git"
+    },
+    "license":"Apache-2.0",
+    "dependencies":{
+      "electron-prebuilt": ">= 1.2.0"
+    }
 }
