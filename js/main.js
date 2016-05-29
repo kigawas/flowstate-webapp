@@ -1,16 +1,9 @@
 $(function() {
-
   'use strict';
 
+  // language support
   var isSuccess = false;
   var language = 'en';
-
-
-  /** ------------------------
-   *
-   * multi-language
-   *
-   * ------------------------ */
   const langDict = {
     en: {
       'lang-1': '<div>This may be the most dangerous app. You have to keep writing, or everything will be erased if you stop beyond the expiring time.</div><div>Now set the duration time you want to focus and the exciting expiring time.</div>',
@@ -75,15 +68,6 @@ $(function() {
   });
 
 
-
-
-
-  /** ------------------------
-   *
-   * simplemde-markdown-editor
-   * https://github.com/NextStepWebs/simplemde-markdown-editor
-   *
-   * ------------------------ */
   var simplemde = new SimpleMDE({
     element: $('#MyID')[0]
   });
@@ -106,13 +90,7 @@ $(function() {
   $codeMirror.height(pre - 120);
   $codeMirror.css('background-color', 'lightblue');
 
-
-
-  /** ------------------------
-   *
-   * timer
-   *
-   * ------------------------ */
+  // timer
   var remainingSet, expireSet, remainingOrigin, expireOrigin;
 
   // check whether the input for time is number
@@ -215,12 +193,7 @@ $(function() {
   }
 
 
-
-  /** ------------------------
-   *
-   * overlay (success or fail)
-   *
-   * ------------------------ */
+  // prompt
   $('.go-copy').bind('click', function() {
     $('div.fullpage-overlay').addClass('hidden');
   });
